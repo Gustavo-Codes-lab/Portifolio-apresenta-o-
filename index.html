@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Gustavo Ribeiro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">Gustavo.Dev</div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#contato" class="btn-contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="badge">Desenvolvedor Júnior em Formação</span>
+                <h1>Olá, sou <span class="highlight">Gustavo Ribeiro</span>.</h1>
+                <p>Estudante de Análise e Desenvolvimento de Sistemas focado em lógica de programação, infraestrutura e criação de sistemas eficientes.</p>
+                
+                <div class="tech-stack-mini">
+                    <i class="fab fa-python" title="Python"></i>
+                    <i class="fas fa-code" title="C Language"></i> <i class="fab fa-linux" title="Linux WSL"></i>
+                    <i class="fab fa-git-alt" title="Git"></i>
+                </div>
+
+                <div class="hero-btns">
+                    <a href="#projetos" class="btn-primary">Ver Meus Projetos</a>
+                    <a href="https://www.linkedin.com/in/gustavo-ribeiro-tech" target="_blank" class="btn-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="perfil link.jpg" alt="Gustavo Ribeiro">
+            </div>
+        </section>
+
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <h2>Sobre Mim</h2>
+                <p class="about-text">
+                    Estudante de Análise e Desenvolvimento de Sistemas com experiência acadêmica em lógica de programação e versionamento de código. Tenho atuação prática em projetos utilizando <strong>Python, C, Git e VS Code</strong>, além de estar me aprofundando em <strong>DevOps</strong> e infraestrutura Linux.
+                </p>
+            </div>
+        </section>
+
+        <section id="habilidades" class="skills-section">
+            <div class="container">
+                <h2>Minhas Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Desenvolvimento</h3>
+                        <ul>
+                            <li>Python & C</li>
+                            <li>Lógica de Programação</li>
+                            <li>HTML & SQL (Básico/Interm.)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <div class="icon-box"><i class="fas fa-server"></i></div>
+                        <h3>Infraestrutura & Ferramentas</h3>
+                        <ul>
+                            <li>Linux (WSL)</li>
+                            <li>Fundamentos de DevOps</li>
+                            <li>Git & VS Code</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <div class="icon-box"><i class="fas fa-users"></i></div>
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Trabalho em Equipe</li>
+                            <li>Raciocínio Lógico</li>
+                            <li>Resolução de Problemas</li>
+                            <li>Comunicação Clara</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="projects-section">
+            <div class="container">
+                <h2>Projetos Acadêmicos</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="card-header code-bg">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Jogo de Xadrez</h3>
+                            <p class="tech-tag">Python</p>
+                            <p>Criação de tabuleiro e jogadas funcionais com foco em lógica de programação e código limpo.</p>
+                            <div class="project-links">
+                                <span><i class="fas fa-check"></i> VS Code</span>
+                                <span><i class="fas fa-check"></i> Git</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="card-header c-bg">
+                            <i class="fas fa-copyright"></i> </div>
+                        <div class="project-info">
+                            <h3>Sistema de Inventário</h3>
+                            <p class="tech-tag">Linguagem C</p>
+                            <p>Sistema de gerenciamento de itens utilizando arrays. Focado em manipulação de memória e estruturas de dados.</p>
+                            <div class="project-links">
+                                <span><i class="fas fa-check"></i> Gestão de Dados</span>
+                            </div>
+                        </div>
+                    </article>
+
+                     <article class="project-card">
+                        <div class="card-header linux-bg">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Gestão Linux (WSL)</h3>
+                            <p class="tech-tag">Infraestrutura</p>
+                            <p>Projeto focado em gerenciamento de sistema, organização de serviços e introdução à hospedagem web e automação.</p>
+                            <div class="project-links">
+                                <span><i class="fas fa-check"></i> Servidores</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacao" class="education-section">
+            <div class="container">
+                <h2>Formação & Cursos</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="date">Jun/2027 (Prev.)</span>
+                        <h3>Análise e Desenvolvimento de Sistemas</h3>
+                        <p>Faculdade Estácio</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2026</span>
+                        <h3>Formação DevOps</h3>
+                        <p>Alura</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2025</span>
+                        <h3>Cursos Complementares</h3>
+                        <p>Python, HTML e SQL - Fundação Bradesco</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato">
+        <div class="container">
+            <h2>Vamos Conversar?</h2>
+            <p>Estou disponível para oportunidades como Desenvolvedor Júnior.</p>
+            
+            <div class="contact-grid">
+                <a href="mailto:Gustavomc8@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i> Gustavomc8@gmail.com
+                </a>
+                <a href="https://wa.me/5511942460101" class="contact-item">
+                    <i class="fas fa-phone"></i> (11) 94246-0101
+                </a>
+                <a href="https://www.linkedin.com/in/gustavo-ribeiro-tech" target="_blank" class="contact-item">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> São Paulo - SP</p>
+        </div>
+    </footer>
+
+</body>
+</html>
