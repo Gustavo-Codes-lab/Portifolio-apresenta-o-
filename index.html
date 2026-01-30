@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Gustavo Ribeiro | Portfólio Profissional</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
         <nav class="nav-container">
             <div class="logo">Gustavo<span class="highlight">.Dev</span></div>
             
-            <button class="hamburger">
+            <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -29,8 +30,8 @@
                 <li><a href="#projetos" class="nav-link">Projetos</a></li>
                 <li><a href="#contato" class="btn-contact nav-link">Contato</a></li>
                 <li>
-                    <button id="theme-toggle" class="theme-btn">
-                        <i class="fas fa-sun"></i>
+                    <button id="theme-toggle" class="theme-btn" aria-label="Alternar Tema">
+                        <i class="fas fa-moon"></i>
                     </button>
                 </li>
             </ul>
@@ -40,17 +41,17 @@
     <main>
         <section class="hero fade-in">
             <div class="hero-content">
-                <div class="status-badge">
-                    <span class="status-dot"></span> Aberto a novas oportunidades
+                <div class="status-badge pulse-badge">
+                    Aberto a novas oportunidades
                 </div>
                 <h1>Olá, sou <span class="highlight">Gustavo Ribeiro</span>.</h1>
                 <p>Estudante de Análise e Desenvolvimento de Sistemas focado em lógica robusta, infraestrutura segura e DevOps.</p>
                 
                 <div class="tech-stack-animated">
-                    <i class="fab fa-python floating-icon" style="--i:1"></i>
-                    <i class="fas fa-code floating-icon" style="--i:2"></i>
-                    <i class="fab fa-linux floating-icon" style="--i:3"></i>
-                    <i class="fab fa-docker floating-icon" style="--i:4"></i>
+                    <i class="fab fa-python floating-icon" style="--i:1" title="Python"></i>
+                    <i class="fas fa-code floating-icon" style="--i:2" title="C Language"></i>
+                    <i class="fab fa-linux floating-icon" style="--i:3" title="Linux / Tux"></i>
+                    <i class="fab fa-docker floating-icon" style="--i:4" title="Docker"></i>
                 </div>
 
                 <div class="hero-btns">
@@ -75,9 +76,9 @@
                 </div>
                 <div class="about-card">
                     <p>
-                        Estudante de Análise e Desenvolvimento de Sistemas na Estácio. Tenho experiência prática acadêmica focada em <strong>C e Python</strong>.
+                        Estudante de Análise e Desenvolvimento de Sistemas na Estácio. Tenho experiência prática acadêmica focada em <strong>C e Python</strong>, desenvolvendo desde jogos de lógica complexa até sistemas de gestão de memória. 
                         <br><br>
-                        Atualmente, estou expandindo meus horizontes para <strong>DevOps, Linux e Segurança</strong>, buscando criar soluções escaláveis e seguras.
+                        Atualmente, estou expandindo meus horizontes para <strong>DevOps, Linux e Segurança</strong>, buscando criar soluções que não apenas funcionem, mas que sejam escaláveis e seguras.
                     </p>
                 </div>
             </div>
@@ -126,8 +127,8 @@
                             <div class="cert-card">
                                 <img src="static/cert-docker.jpg" alt="Certificado Docker">
                                 <div class="cert-info">
-                                    <h3>DevOps com Docker</h3>
-                                    <p>Aprendi conceitos fundamentais de containers, criação de imagens, Docker Hub e persistência de dados.</p>
+                                    <h3>DevOps: Construindo e Gerindo Containers</h3>
+                                    <p>Durante o curso, aprendi os conceitos fundamentais de containers, como criar, executar e gerenciar containers no Docker, a importância das imagens Docker e do Docker Hub, além de criar minha própria imagem e realizar o push para o repositório. Também aprofundei meus conhecimentos em persistência de dados em containers, entendendo como garantir segurança, organização e reutilização das aplicações em ambientes containerizados.</p>
                                 </div>
                             </div>
                         </div>
@@ -136,8 +137,8 @@
                             <div class="cert-card">
                                 <img src="static/cert-github.jpg" alt="Certificado GitHub">
                                 <div class="cert-info">
-                                    <h3>Git e GitHub Actions</h3>
-                                    <p>Dominei comandos Git, GitFlow, commits e aprendi a organizar fluxos com GitHub Actions.</p>
+                                    <h3>DevOps: Trabalhando com Repositórios</h3>
+                                    <p>Durante as aulas, aprendi sobre os principais comandos de trabalho no GitHub, como aplicar GitFlow e GitHub Actions, além de lidar com commits, conflitos, issues e PRs. Também descobri como organizar fluxos e projetos com GitHub Actions e a importância da segurança com o Dependabot. Essa jornada de aprendizado foi incrível e me ajudou a evoluir muito nos meus estudos!</p>
                                 </div>
                             </div>
                         </div>
@@ -146,8 +147,8 @@
                             <div class="cert-card">
                                 <img src="static/cert-https.jpg" alt="Certificado HTTPS">
                                 <div class="cert-info">
-                                    <h3>Tráfego Seguro (HTTPS)</h3>
-                                    <p>Foco em métodos HTTP, identificação de recursos e implementação de criptografia via HTTPS.</p>
+                                    <h3>DevOps: Tráfego Seguro e HTTPS</h3>
+                                    <p>Ao longo das aulas, consegui entender de forma bem mais clara como a comunicação web funciona na prática. Aprendi a usar os métodos HTTP com mais segurança e precisão, a identificar e gerenciar recursos corretamente e, principalmente, a implementar comunicações seguras com criptografia via HTTPS. Estudar a evolução do protocolo HTTP também foi um grande diferencial, trazendo uma visão mais madura sobre como construímos sistemas modernos, resilientes e protegidos.</p>
                                 </div>
                             </div>
                         </div>
@@ -156,8 +157,8 @@
                             <div class="cert-card">
                                 <img src="static/cert-linux.jpg" alt="Certificado Linux">
                                 <div class="cert-info">
-                                    <h3>Linux CLI e Scripts</h3>
-                                    <p>Prática diária com terminal Linux, criação de scripts para automação e monitoramento.</p>
+                                    <h3>DevOps: Linux CLI e Scripts</h3>
+                                    <p>Na prática, trabalhei com Linux no dia a dia, uso do terminal, criação de scripts, automação de tarefas e monitoramento de processos, fundamentos essenciais para ambientes DevOps e back-end.</p>
                                 </div>
                             </div>
                         </div>
@@ -183,8 +184,10 @@
                         <div class="project-info">
                             <h3>Desafio Xadrez</h3>
                             <p class="tech-tag">Python & Lógica</p>
-                            <p>Implementação completa das regras de xadrez.</p>
-                            <a href="https://github.com/Cursos-TI/desafio-xadrez-Gustavo78-betr" target="_blank" class="link-arrow">Ver Repositório <i class="fas fa-external-link-alt"></i></a>
+                            <p>Implementação completa das regras de xadrez, validação de movimentos e lógica de xeque-mate.</p>
+                            <a href="https://github.com/Cursos-TI/desafio-xadrez-Gustavo78-betr" target="_blank" class="link-arrow">
+                                Ver Repositório <i class="fas fa-external-link-alt"></i>
+                            </a>
                         </div>
                     </article>
                     
@@ -195,8 +198,10 @@
                         <div class="project-info">
                             <h3>Free Fire Strategy</h3>
                             <p class="tech-tag">Estrutura de Dados (C)</p>
-                            <p>Sistema de simulação de inventário e estratégia.</p>
-                            <a href="https://github.com/EstruturaDados/free-fire-Gustavo78-betr" target="_blank" class="link-arrow">Ver Repositório <i class="fas fa-external-link-alt"></i></a>
+                            <p>Sistema de simulação de inventário e estratégia, focado em alocação eficiente de recursos e arrays.</p>
+                            <a href="https://github.com/EstruturaDados/free-fire-Gustavo78-betr" target="_blank" class="link-arrow">
+                                Ver Repositório <i class="fas fa-external-link-alt"></i>
+                            </a>
                         </div>
                     </article>
                 </div>
@@ -208,16 +213,29 @@
                 <div class="contact-layout">
                     <div class="contact-info-col">
                         <h2>Vamos conversar?</h2>
-                        <p>Estou disponível para novas oportunidades.</p>
+                        <p>Estou disponível para novas oportunidades. Sinta-se à vontade para entrar em contato para projetos, colaborações ou apenas para dar um feedback.</p>
                         
                         <div class="contact-details">
                             <div class="contact-item">
                                 <i class="fas fa-envelope"></i>
-                                <div><span>Email</span><a href="mailto:Gustavomc8@gmail.com">Gustavomc8@gmail.com</a></div>
+                                <div>
+                                    <span>Email</span>
+                                    <a href="mailto:Gustavomc8@gmail.com">Gustavomc8@gmail.com</a>
+                                </div>
                             </div>
                             <div class="contact-item">
                                 <i class="fab fa-linkedin"></i>
-                                <div><span>LinkedIn</span><a href="https://www.linkedin.com/in/gustavo-ribeiro-tech" target="_blank">/gustavo-ribeiro-tech</a></div>
+                                <div>
+                                    <span>LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/gustavo-ribeiro-tech" target="_blank">/gustavo-ribeiro-tech</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span>Telefone / WhatsApp</span>
+                                    <a href="https://wa.me/5511942460101" target="_blank">(11) 94246-0101</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -225,18 +243,25 @@
                     <div class="contact-form-col">
                         <h3>Me dê seu feedback</h3>
                         <form id="contact-form">
+                            <input type="hidden" name="_subject" value="Novo Feedback do Portfólio!">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+
                             <div class="input-group">
                                 <label for="nome">Nome</label>
                                 <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
                             </div>
+                            
                             <div class="input-group">
                                 <label for="email">E-mail</label>
                                 <input type="email" id="email" name="email" placeholder="seu@email.com" required>
                             </div>
+                            
                             <div class="input-group">
-                                <label for="mensagem">Mensagem</label>
+                                <label for="mensagem">Mensagem / Feedback</label>
                                 <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua mensagem..." required></textarea>
                             </div>
+
                             <button type="submit" class="btn-primary full-width">Enviar Agora</button>
                             <p id="form-feedback" class="feedback-msg"></p>
                         </form>
@@ -248,11 +273,34 @@
 
     <footer>
         <div class="container">
-            <p>&copy; <span id="year"></span> Gustavo Ribeiro. Foco em Cibersegurança e DevOps.</p>
+            <p>&copy; <span id="year"></span> Gustavo Ribeiro. Desenvolvido com foco cibersegurança e infraestrutura.</p>
         </div>
     </footer>
+
+    <button id="back-to-top" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+<!---
+   ___            ___            ___            ___
+  /\__\          /\__\          /\__\          /\__\
+ /:/ _/_        /:/ _/_        /:/ _/_        /:/ _/_
+/:/ /\__\      /:/ /\__\      /:/ /\__\      /:/ /\__\
+/:/ /:/ _/_    /:/ /:/ _/_    /:/ /:/ _/_    /:/ /:/ _/_
+/:/_/:/ /\__\  /:/_/:/ /\__\  /:/_/:/ /\__\  /:/_/:/ /\__\
+\:\:\/:/ /:/  \:\:\/:/ /:/  \:\:\/:/ /:/  \:\:\/:/ /:/
+ \:\::/_/:/    \:\::/_/:/    \:\::/_/:/    \:\::/_/:/
+  \:\:\/:/      \:\:\/:/      \:\:\/:/      \:\:\/:/
+   \:\::/        \:\::/        \:\::/        \:\::/
+    \:\/          \:\/          \:\/          \:\/
+
+    G              R              P              S
+
+    G.R.P.S — Gustavo Ribeiro Portfolio System
+    github.com/Gustavo-Codes-lab  */
