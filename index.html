@@ -3,188 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Gustavo Ribeiro</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Gustavo Ribeiro | Portfólio Profissional</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="header">
         <nav class="nav-container">
-            <div class="logo">Gustavo.Dev</div>
+            <div class="logo">Gustavo<span class="highlight">.Dev</span></div>
+            
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
             <ul class="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#contato" class="btn-contact">Contato</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#certificados" class="nav-link">Certificações</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#contato" class="btn-contact nav-link">Contato</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-btn">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero fade-in">
             <div class="hero-content">
-                <span class="badge">Desenvolvedor Júnior em Formação</span>
+                <div class="status-badge">
+                    <span class="status-dot"></span> Aberto a novas oportunidades
+                </div>
                 <h1>Olá, sou <span class="highlight">Gustavo Ribeiro</span>.</h1>
-                <p>Estudante de Análise e Desenvolvimento de Sistemas focado em lógica de programação, infraestrutura e criação de sistemas eficientes.</p>
+                <p>Estudante de Análise e Desenvolvimento de Sistemas focado em lógica robusta, infraestrutura segura e DevOps.</p>
                 
-                <div class="tech-stack-mini">
-                    <i class="fab fa-python" title="Python"></i>
-                    <i class="fas fa-code" title="C Language"></i> <i class="fab fa-linux" title="Linux WSL"></i>
-                    <i class="fab fa-git-alt" title="Git"></i>
+                <div class="tech-stack-animated">
+                    <i class="fab fa-python floating-icon" style="--i:1"></i>
+                    <i class="fas fa-code floating-icon" style="--i:2"></i>
+                    <i class="fab fa-linux floating-icon" style="--i:3"></i>
+                    <i class="fab fa-docker floating-icon" style="--i:4"></i>
                 </div>
 
                 <div class="hero-btns">
-                    <a href="#projetos" class="btn-primary">Ver Meus Projetos</a>
+                    <a href="#projetos" class="btn-primary nav-link">Ver Portfólio</a>
                     <a href="https://www.linkedin.com/in/gustavo-ribeiro-tech" target="_blank" class="btn-secondary">
                         <i class="fab fa-linkedin"></i> LinkedIn
                     </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="perfil link.jpg" alt="Gustavo Ribeiro">
+            
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <img src="perfil link.jpg" alt="Gustavo Ribeiro" class="profile-pic">
+                </div>
             </div>
         </section>
 
-        <section id="sobre" class="about-section">
+        <section id="sobre" class="section-padding fade-in">
             <div class="container">
-                <h2>Sobre Mim</h2>
-                <p class="about-text">
-                    Estudante de Análise e Desenvolvimento de Sistemas com experiência acadêmica em lógica de programação e versionamento de código. Tenho atuação prática em projetos utilizando <strong>Python, C, Git e VS Code</strong>, além de estar me aprofundando em <strong>DevOps</strong> e infraestrutura Linux.
-                </p>
+                <div class="section-header">
+                    <h2>Sobre Mim</h2>
+                </div>
+                <div class="about-card">
+                    <p>
+                        Estudante de Análise e Desenvolvimento de Sistemas na Estácio. Tenho experiência prática acadêmica focada em <strong>C e Python</strong>.
+                        <br><br>
+                        Atualmente, estou expandindo meus horizontes para <strong>DevOps, Linux e Segurança</strong>, buscando criar soluções escaláveis e seguras.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section id="habilidades" class="skills-section">
+        <section id="habilidades" class="section-padding fade-in">
             <div class="container">
-                <h2>Minhas Habilidades</h2>
+                <div class="section-header">
+                    <h2>Habilidades Técnicas</h2>
+                </div>
                 <div class="skills-grid">
                     <div class="skill-card">
                         <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
-                        <h3>Desenvolvimento</h3>
+                        <h3>Backend & Lógica</h3>
                         <ul>
-                            <li>Python & C</li>
-                            <li>Lógica de Programação</li>
-                            <li>HTML & SQL (Básico/Interm.)</li>
+                            <li>Python (Automação/Scripts)</li>
+                            <li>Linguagem C (Gestão de Memória)</li>
+                            <li>Lógica de Algoritmos</li>
+                            <li>SQL (Modelagem de Dados)</li>
                         </ul>
                     </div>
                     <div class="skill-card">
-                        <div class="icon-box"><i class="fas fa-server"></i></div>
-                        <h3>Infraestrutura & Ferramentas</h3>
+                        <div class="icon-box"><i class="fas fa-network-wired"></i></div>
+                        <h3>DevOps & Infra</h3>
                         <ul>
-                            <li>Linux (WSL)</li>
-                            <li>Fundamentos de DevOps</li>
-                            <li>Git & VS Code</li>
-                        </ul>
-                    </div>
-                    <div class="skill-card">
-                        <div class="icon-box"><i class="fas fa-users"></i></div>
-                        <h3>Soft Skills</h3>
-                        <ul>
-                            <li>Trabalho em Equipe</li>
-                            <li>Raciocínio Lógico</li>
-                            <li>Resolução de Problemas</li>
-                            <li>Comunicação Clara</li>
+                            <li>Linux (WSL & Administração)</li>
+                            <li>Git & Versionamento</li>
+                            <li>Docker (Básico)</li>
+                            <li>Segurança de Redes</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projetos" class="projects-section">
+        <section id="certificados" class="section-padding fade-in">
             <div class="container">
-                <h2>Projetos Acadêmicos</h2>
+                <div class="section-header">
+                    <h2>Certificações</h2>
+                </div>
+        
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide">
+                            <div class="cert-card">
+                                <img src="static/cert-docker.jpg" alt="Certificado Docker">
+                                <div class="cert-info">
+                                    <h3>DevOps com Docker</h3>
+                                    <p>Aprendi conceitos fundamentais de containers, criação de imagens, Docker Hub e persistência de dados.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-slide">
+                            <div class="cert-card">
+                                <img src="static/cert-github.jpg" alt="Certificado GitHub">
+                                <div class="cert-info">
+                                    <h3>Git e GitHub Actions</h3>
+                                    <p>Dominei comandos Git, GitFlow, commits e aprendi a organizar fluxos com GitHub Actions.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-slide">
+                            <div class="cert-card">
+                                <img src="static/cert-https.jpg" alt="Certificado HTTPS">
+                                <div class="cert-info">
+                                    <h3>Tráfego Seguro (HTTPS)</h3>
+                                    <p>Foco em métodos HTTP, identificação de recursos e implementação de criptografia via HTTPS.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-slide">
+                            <div class="cert-card">
+                                <img src="static/cert-linux.jpg" alt="Certificado Linux">
+                                <div class="cert-info">
+                                    <h3>Linux CLI e Scripts</h3>
+                                    <p>Prática diária com terminal Linux, criação de scripts para automação e monitoramento.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section-padding fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Projetos em Destaque</h2>
+                </div>
                 <div class="projects-grid">
                     <article class="project-card">
-                        <div class="card-header code-bg">
-                            <i class="fab fa-python"></i>
+                        <div class="card-image chess-bg">
+                            <i class="fas fa-chess-knight"></i>
                         </div>
                         <div class="project-info">
-                            <h3>Jogo de Xadrez</h3>
-                            <p class="tech-tag">Python</p>
-                            <p>Criação de tabuleiro e jogadas funcionais com foco em lógica de programação e código limpo.</p>
-                            <div class="project-links">
-                                <span><i class="fas fa-check"></i> VS Code</span>
-                                <span><i class="fas fa-check"></i> Git</span>
-                            </div>
+                            <h3>Desafio Xadrez</h3>
+                            <p class="tech-tag">Python & Lógica</p>
+                            <p>Implementação completa das regras de xadrez.</p>
+                            <a href="https://github.com/Cursos-TI/desafio-xadrez-Gustavo78-betr" target="_blank" class="link-arrow">Ver Repositório <i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </article>
-
+                    
                     <article class="project-card">
-                        <div class="card-header c-bg">
-                            <i class="fas fa-copyright"></i> </div>
-                        <div class="project-info">
-                            <h3>Sistema de Inventário</h3>
-                            <p class="tech-tag">Linguagem C</p>
-                            <p>Sistema de gerenciamento de itens utilizando arrays. Focado em manipulação de memória e estruturas de dados.</p>
-                            <div class="project-links">
-                                <span><i class="fas fa-check"></i> Gestão de Dados</span>
-                            </div>
-                        </div>
-                    </article>
-
-                     <article class="project-card">
-                        <div class="card-header linux-bg">
-                            <i class="fab fa-linux"></i>
+                        <div class="card-image strategy-bg">
+                            <i class="fas fa-gamepad"></i>
                         </div>
                         <div class="project-info">
-                            <h3>Gestão Linux (WSL)</h3>
-                            <p class="tech-tag">Infraestrutura</p>
-                            <p>Projeto focado em gerenciamento de sistema, organização de serviços e introdução à hospedagem web e automação.</p>
-                            <div class="project-links">
-                                <span><i class="fas fa-check"></i> Servidores</span>
-                            </div>
+                            <h3>Free Fire Strategy</h3>
+                            <p class="tech-tag">Estrutura de Dados (C)</p>
+                            <p>Sistema de simulação de inventário e estratégia.</p>
+                            <a href="https://github.com/EstruturaDados/free-fire-Gustavo78-betr" target="_blank" class="link-arrow">Ver Repositório <i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="formacao" class="education-section">
+        <section id="contato" class="section-padding fade-in">
             <div class="container">
-                <h2>Formação & Cursos</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <span class="date">Jun/2027 (Prev.)</span>
-                        <h3>Análise e Desenvolvimento de Sistemas</h3>
-                        <p>Faculdade Estácio</p>
+                <div class="contact-layout">
+                    <div class="contact-info-col">
+                        <h2>Vamos conversar?</h2>
+                        <p>Estou disponível para novas oportunidades.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div><span>Email</span><a href="mailto:Gustavomc8@gmail.com">Gustavomc8@gmail.com</a></div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-linkedin"></i>
+                                <div><span>LinkedIn</span><a href="https://www.linkedin.com/in/gustavo-ribeiro-tech" target="_blank">/gustavo-ribeiro-tech</a></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="timeline-item">
-                        <span class="date">2026</span>
-                        <h3>Formação DevOps</h3>
-                        <p>Alura</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="date">2025</span>
-                        <h3>Cursos Complementares</h3>
-                        <p>Python, HTML e SQL - Fundação Bradesco</p>
+
+                    <div class="contact-form-col">
+                        <h3>Me dê seu feedback</h3>
+                        <form id="contact-form">
+                            <div class="input-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua mensagem..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary full-width">Enviar Agora</button>
+                            <p id="form-feedback" class="feedback-msg"></p>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer id="contato">
+    <footer>
         <div class="container">
-            <h2>Vamos Conversar?</h2>
-            <p>Estou disponível para oportunidades como Desenvolvedor Júnior.</p>
-            
-            <div class="contact-grid">
-                <a href="mailto:Gustavomc8@gmail.com" class="contact-item">
-                    <i class="fas fa-envelope"></i> Gustavomc8@gmail.com
-                </a>
-                <a href="https://wa.me/5511942460101" class="contact-item">
-                    <i class="fas fa-phone"></i> (11) 94246-0101
-                </a>
-                <a href="https://www.linkedin.com/in/gustavo-ribeiro-tech" target="_blank" class="contact-item">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-            </div>
-            <p class="location"><i class="fas fa-map-marker-alt"></i> São Paulo - SP</p>
+            <p>&copy; <span id="year"></span> Gustavo Ribeiro. Foco em Cibersegurança e DevOps.</p>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
